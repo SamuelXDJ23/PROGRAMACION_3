@@ -3,26 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENU</title>
+    <title>MyShuzz - Moda y Descuentos</title>
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/Others.css">
 </head>
 <body>
-    <div class="contenedor">
-        <div class="cuerpo">
-                <h1 class="text-center">MENU</h1>
-                <div class="d-flex justify-content-center">
-                    <a href="/WEB/registro.html" class="btn btn-primary mx-2">Registrar</a>
-                    <a href="/WEB/login.html" class="btn btn-secondary mx-2">Iniciar Sesión</a>
-                </div>
-        </div>
-        <div class="cuerpo">
-            //se hace el registro del usuario y se le asigna el rol de cliente por defecto
-
-        </div>
+    <!-- Tu barra de tareas con buscador -->
+    <div class="barraTareas">
+        <header class="cabecera">
+            <h1 class="logo-myshuzz">MyShuzz</h1>  <!-- Añadí el logo -->
+            <label for="search-input" class="search-label"></label>
+            <input type="search" id="search-input" class="search-input" placeholder="Buscar por productos, marcas y más...">
+        </header>
     </div>
-    
-    <a href="Registro.html">Ir a Registro</a>
+
+    <!-- NUEVO: Menú de categorías -->
+    <nav class="categorias-menu">
+        <a href="#">Ver categorías</a>
+        <a href="#">Todos</a>
+        <a href="#">Moda</a>
+        <a href="#">Deportes y aire libre</a>
+        <a href="#">Hogar</a>
+        <a href="#">Marcas</a>
+        <a href="#" class="ofertas-link">OFERTAS</a>
+    </nav>
+
+    <!-- NUEVO: Layout principal con filtros + productos -->
+    <div class="contenedor-principal">
+        <!-- Filtros laterales -->
+        <aside class="panel-filtros">
+            <h3>Mujer</h3>
+            <div class="etiqueta-promocion">Promoción</div>
+            <div class="grupo-genero">
+                <h4>Género</h4>
+                <label><input type="checkbox"> Hombre</label>
+                <label><input type="checkbox"> Mujer</label>
+                <label><input type="checkbox"> Niños</label>
+            </div>
+        </aside>
+
+        <!-- Sección de productos -->
+        <main class="seccion-productos">
+            <div class="cabecera-productos">
+                <span class="contador-productos">1994 Productos</span>
+            </div>
+            <div class="grid-productos">
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta-producto">
+                    <div class="badge-descuento">52% Descuento</div>
+                    <div class="imagen-producto">👟</div>
+                    <h4>New balance</h4>
+                    <p class="marca">CAT</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta-producto">
+                    <div class="badge-descuento">41% Descuento</div>
+                    <div class="imagen-producto">👕</div>
+                    <h4>Camiseta</h4>
+                    <p class="marca">Nike</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta-producto">
+                    <div class="badge-descuento">40% Descuento</div>
+                    <div class="imagen-producto">🧥</div>
+                    <h4>Chaqueta</h4>
+                    <p class="marca">Zara</p>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="tarjeta-producto">
+                    <div class="badge-descuento">45% Descuento</div>
+                    <div class="imagen-producto">🎒</div>
+                    <h4>Mochila</h4>
+                    <p class="marca">The North Face</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <a href="Registro.html" class="enlace-registro">Ir a Registro</a>
     <script src="/Bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

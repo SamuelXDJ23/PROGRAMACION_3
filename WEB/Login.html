@@ -17,38 +17,18 @@
             <div class="lamp-string" id="string"></div>
         </div>
     <div class="login-card" id="loginForm">
-    <h2>Welcome</h2>
+    <h2>Bienvenido</h2>
     <div class="input-box">
-        <label>Username</label>
-        <input type="text" placeholder="Your name">
+        <label>Usuario</label>
+        <input type="text" placeholder="Tu Nombre">
     </div>
     <div class="input-box">
-        <label>Password</label>
+        <label>Contraseña</label>
         <input type="password"          placeholder="********">
         </div>
-             <button>Sign In</button>
+             <button>Entrar</button>
         </div>
     </div>
-    <script>
-        let isOn=false;
-        const loginForm=document.getElementById("loginForm");
-        const lampGroup=document.getElementById("lampGroup");
-        const body=document.getElementById("body");
-        const root=document.documentElement;
-    function toggleLamp(){
-        isOn=!isOn;
-        lampGroup.setAttribute("data-on",isOn);
-            root.style.setProperty("--on",isOn?1:0);
-            gsap.to("#string",{y:10,duration:.1,yoyo:true,repeat:1});
-        if(isOn){
-            loginForm.classList.add("active");
-            gsap.to(body,{backgroundColor:"#1c1f24",duration:.6});
-        }
-        else{
-            loginForm.classList.remove("active");
-            gsap.to(body,{backgroundColor:"#121417",duration:.6});  
-        }
-    }
-    </script>
+    <script src="/JS/Otros.js"></script>
 </body>
 </html>

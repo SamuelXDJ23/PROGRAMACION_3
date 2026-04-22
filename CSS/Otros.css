@@ -23,28 +23,28 @@
 .lamp-base{width:12px;height:120px;background:#d0d0d0;margin-top:-5px;}
 .lamp-bottom{width:80px;height:10px;background:#d0d0d0;border-radius:5px;}
 .lamp-string{
-position:absolute;width:2px;height:60px;
-background:#555;left:75%;top:65px;transition:.2s;
+    position:absolute;width:2px;height:60px;
+    background:#555;left:75%;top:65px;transition:.2s;
 }
 .lamp-string::after{
-content:'';position:absolute;bottom:-10px;left:-4px;
-width:10px;height:10px;background:#c5a570;border-radius:50%;
+    content:'';position:absolute;bottom:-10px;left:-4px;
+    width:10px;height:10px;background:#c5a570;border-radius:50%;
 }
 .light-glow{
-position:absolute;top:-60px;width:350px;height:350px;
-background:radial-gradient(circle,rgba(255,255,255,.1)0%,rgba(0,0,0,0)70%);
-opacity:var(--on);pointer-events:none;transition:.6s;
+    position:absolute;top:-60px;width:350px;height:350px;
+    background:radial-gradient(circle,rgba(255,255,255,.1)0%,rgba(0,0,0,0)70%);
+    opacity:var(--on);pointer-events:none;transition:.6s;
 }
 .login-card{
-background:rgba(255,255,255,.03);
-backdrop-filter:blur(15px);
-padding:40px;border-radius:25px;
-border:1px solid rgba(255,255,255,.08);
-width:280px;color:white;
-opacity:0;visibility:hidden;
-transform:translateX(30px);
-pointer-events:none;
-transition:all .6s cubic-bezier(.4,0,.2,1);
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(15px);
+    padding:40px;border-radius:25px;
+    border:1px solid rgba(255,255,255,.08);
+    width:280px;color:white;
+    opacity:0;visibility:hidden;
+    transform:translateX(30px);
+    pointer-events:none;
+    transition:all .6s cubic-bezier(.4,0,.2,1);
 }
 .login-card.active{
 opacity:1;visibility:visible;

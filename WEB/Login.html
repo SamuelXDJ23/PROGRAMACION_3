@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login Lamp Final</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<link rel="stylesheet" href="/CSS/Otros.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="/CSS/Otros.css">
 </head>
-<body id="body">
-<div class="main-container">
-<div class="lamp-wrapper" id="lampGroup" onclick="toggleLamp()">
-<div class="light-glow"></div>
-<div class="lamp-top"></div>
-<div class="lamp-base"></div>
-<div class="lamp-bottom"></div>
-<div class="lamp-string" id="string"></div>
-</div>
-<div class="login-card" id="loginForm">
-<h2>Welcome</h2>
-<div class="input-box">
-<label>Username</label>
-<input type="text" placeholder="Your name">
-</div>
-<div class="input-box">
-<label>Password</label>
-<input type="password" placeholder="********">
-</div>
-<button>Sign In</button>
-</div>
-</div>
-<script>
-let isOn=false;
-const loginForm=document.getElementById("loginForm");
-const lampGroup=document.getElementById("lampGroup");
-const body=document.getElementById("body");
-const root=document.documentElement;
-function toggleLamp(){
-isOn=!isOn;
-lampGroup.setAttribute("data-on",isOn);
-root.style.setProperty("--on",isOn?1:0);
-gsap.to("#string",{y:10,duration:.1,yoyo:true,repeat:1});
-if(isOn){
-loginForm.classList.add("active");
-gsap.to(body,{backgroundColor:"#1c1f24",duration:.6});
-}else{
-loginForm.classList.remove("active");
-gsap.to(body,{backgroundColor:"#121417",duration:.6});
-}
-}
-</script>
+    <body id="body">
+        <div class="main-container">
+        <div class="lamp-wrapper" id="lampGroup" onclick="toggleLamp()">
+        <div class="light-glow"></div>
+        <div class="lamp-top"></div>
+        <div class="lamp-base"></div>
+        <div class="lamp-bottom"></div>
+            <div class="lamp-string" id="string"></div>
+        </div>
+    <div class="login-card" id="loginForm">
+    <h2>Welcome</h2>
+    <div class="input-box">
+        <label>Username</label>
+        <input type="text" placeholder="Your name">
+    </div>
+    <div class="input-box">
+        <label>Password</label>
+        <input type="password"          placeholder="********">
+        </div>
+             <button>Sign In</button>
+        </div>
+    </div>
+    <script>
+        let isOn=false;
+        const loginForm=document.getElementById("loginForm");
+        const lampGroup=document.getElementById("lampGroup");
+        const body=document.getElementById("body");
+        const root=document.documentElement;
+    function toggleLamp(){
+        isOn=!isOn;
+        lampGroup.setAttribute("data-on",isOn);
+            root.style.setProperty("--on",isOn?1:0);
+            gsap.to("#string",{y:10,duration:.1,yoyo:true,repeat:1});
+        if(isOn){
+            loginForm.classList.add("active");
+            gsap.to(body,{backgroundColor:"#1c1f24",duration:.6});
+        }
+        else{
+            loginForm.classList.remove("active");
+            gsap.to(body,{backgroundColor:"#121417",duration:.6});  
+        }
+    }
+    </script>
 </body>
 </html>

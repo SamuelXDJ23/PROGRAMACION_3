@@ -1,3 +1,4 @@
+/* LOGIN----------------------------- */
 :root{--on:0;--bg-color:#121417;}
     body{
         margin:0;height:100vh;display:flex;
@@ -72,3 +73,4 @@ button{
     color:#332200;font-weight:bold;
     cursor:pointer;margin-top:10px;
 }
+/* FIN DEL LOGIN ---------------------------- */

@@ -1,13 +1,13 @@
 /* LOGIN----------------------------- */
 :root{--on:0;--bg-color:#121417;}
-body{
+/* body{
         margin:0;
         height:100vh;
         display:flex;
         justify-content:center;align-items:center;
         background-color:var(--bg-color);
         font-family:'Segoe UI',sans-serif;overflow:hidden;
-}
+} */
 .main-container{
     display:flex;
     align-items:center;

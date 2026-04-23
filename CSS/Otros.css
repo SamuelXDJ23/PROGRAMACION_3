@@ -127,3 +127,26 @@ button{
     margin-top:10px;
 }
 /* FIN DEL LOGIN ---------------------------- */
+/* ---------------------------------MENU--------------------------------- */
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    background: #202327;
+    color: #fff;
+}
+.SideOptions{
+    
+}
+    .SideOption{
+        padding: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+.SideOption:hover{
+    background-color: #2e3034;
+}

@@ -138,15 +138,13 @@ button{
     background: #202327;
     color: #fff;
 }
-.SideOptions{
-    
+
+.SideOption{
+    padding: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-    .SideOption{
-        padding: auto;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
 .SideOption:hover{
     background-color: #2e3034;
 }

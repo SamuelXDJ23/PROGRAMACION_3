@@ -1,13 +1,13 @@
 /* LOGIN----------------------------- */
 :root{--on:0;--bg-color:#121417;}
-body{
+/* body{
         margin:0;
         height:100vh;
         display:flex;
         justify-content:center;align-items:center;
         background-color:var(--bg-color);
         font-family:'Segoe UI',sans-serif;overflow:hidden;
-}
+} */
 .main-container{
     display:flex;
     align-items:center;
@@ -127,3 +127,24 @@ button{
     margin-top:10px;
 }
 /* FIN DEL LOGIN ---------------------------- */
+/* ---------------------------------MENU--------------------------------- */
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    background: #202327;
+    color: #fff;
+}
+
+.SideOption{
+    padding: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.SideOption:hover{
+    background-color: #2e3034;
+}

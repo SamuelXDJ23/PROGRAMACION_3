@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +22,23 @@
     <!-- Menu de opciones -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
         <div class="container-fluid">
-            <a href="" class="navbar-brand text-info fw-semibold fs-4">INICIO</a>
+            <a href="#" class="navbar-brand text-info fw-semibold fs-4"><i class="bi bi-house-door"></i> INICIO</a>
             <!-- nav button -->
-            <button class="navbar-toggler"type="button"data-bs-toggle="offcanvas"data-bs-target="#menuLateral">
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#menuLateral"
+                aria-controls="menuLateral"
+                aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <!-- aca termina el nav button -->
+        
         <!-- offcanvas creamos aca -->
-        <section class="offcanvas offcanvas-start bg-dark" id="menuLateral" tabindex="-1">
-            <div>
+        <section class="offcanvas offcanvas-start bg-dark" id="menuLateral" tabindex="-1" with="20%"
+        aria-labelledby="menuLateralLabel">
+            <div class="offcanvas-header" data-bs-theme="dark">
                 <h5 class="fs-4 text-info">Menu</h5>
                 <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="offcanvas "></button>
             </div>

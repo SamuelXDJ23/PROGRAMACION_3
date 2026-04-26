@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Menu</title>
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/Otros.css">
@@ -11,5 +12,76 @@
 <body id="body">
     <!-- cabecera -->
     
+=======
+    <title>Seria el menú</title>
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/Otros.css">
+    <link rel="stylesheet" href="/Bootstrap/bt-icons/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- cabecera -->
+    <!-- <div class="container">
+        <article>
+        <aside class="sidebar">
+            <div class="SideOption" type="button">Opción 1</div>
+            <div class="SideOption" type="button">Opción 2</div>
+            <div class="SideOption" type="button">Opción 3</div>
+        </aside>
+    </article>
+    </div> -->
+    <!-- Menu de opciones -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Logo/Marca -->
+            <a href="#" class="navbar-brand text-info fw-semibold fs-4">
+                <i class="bi bi-house-door"></i> INICIO
+            </a>
+            
+            <!-- Botón Toggle para móvil -->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#menuLateral"
+                aria-controls="menuLateral"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú Offcanvas (Lateral) -->
+            <div class="offcanvas offcanvas-start bg-dark" id="menuLateral"
+             tabindex="-1" aria-labelledby="menuLateralLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-info" id="menuLateralLabel">Menú</h5>
+                    <button 
+                        type="button" 
+                        class="btn-close btn-close-white" 
+                        data-bs-dismiss="offcanvas" 
+                        aria-label="Cerrar menú">
+                    </button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acerca">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="/Bootstrap/js/bootstrap.js"></script>
+>>>>>>> c7725b93e8dc7fcd8fb6a44d474ac1e8d6126e43
 </body>
 </html>

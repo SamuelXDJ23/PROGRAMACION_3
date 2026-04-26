@@ -1,6 +1,6 @@
 /* LOGIN----------------------------- */
 :root{--on:0;--bg-color:#121417;}
-body{
+#body{
         margin:0;
         height:100vh;
         display:flex;

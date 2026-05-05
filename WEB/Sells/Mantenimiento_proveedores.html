@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/Otros.css">
+    <!-- Mantenimiento de marcas  -->
+     <style>
+        button{
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+        .card{
+            border-radius: 25px;
+            background:rgba(255,255,255,.03);
+            backdrop-filter:blur(15px);
+            padding:40px;
+            border:1px solid rgba(255,255,255,.08);
+            box-shadow:0 25px 50px rgba(0,0,0,.4);
+            color: aliceblue;
+        }
+        
+     </style>
+     
+</head>
+<body id="body">
+     <!-- Mantenimiento de Proveedores -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                <div class="card">
+                    <div class="card-body p-4" id="card-body">
+                        <h1 class="card-title text-center mb-4">Mantenimiento de Proveedores</h1>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombreProveedor" class="form-label">Nombre del Proveedor</label>
+                                <input type="text" class="form-control" id="nombreProveedor" placeholder="Ingrese el nombre del proveedor">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactoProveedor" class="form-label">Contacto</label>
+                                <input type="text" class="form-control" id="contactoProveedor" placeholder="Ingrese el contacto del proveedor">
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccionProveedor" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="direccionProveedor" placeholder="Ingrese la dirección del proveedor">
+                            </div>
+                            <button type="submit" >Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

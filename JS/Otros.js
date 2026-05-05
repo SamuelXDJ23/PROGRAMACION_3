@@ -17,3 +17,4 @@
             gsap.to(body,{backgroundColor:"#121417",duration:.6});  
         }
     }
+    

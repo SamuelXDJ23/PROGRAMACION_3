@@ -27,10 +27,24 @@
         <label>Contraseña</label>
         <input type="password" placeholder="********">
         </div>
-             <button>Entrar</button>
+            <button type="button" onclick="validarLogin()">Entrar</button>
         </div>
     </div>
     <script src="/JS/Otros.js"></script>
+
+    <script>
+        function validarLogin(){
+        const usu= document.getElementById("usuario").value;
+        const pass= document.getElementById("contraseña").value;
+        if(usu === "admin" && pass === "admin123"){
+            alert("Bienvenido, admin!");
+            window.location.href = "/Sells/Mantenimiento_clasificaciones.html";
+        }
+        else{
+            alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
+        }
+    };
+    </script>
 </body>
 <!-- Esto se supone que lo mando angelito -->
 </html>

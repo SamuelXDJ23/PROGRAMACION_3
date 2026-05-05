@@ -21,17 +21,34 @@
         <h2>Bienvenido</h2>
     <div class="input-box">
         <label>Usuario</label>
-        <input type="text" placeholder="Tu Nombre" id="usuario">
+        <input type="text" id="user" placeholder="Tu Nombre">
     </div>
     <div class="input-box">
         <label>Contraseña</label>
-        <input type="password" placeholder="********" id="contraseña" onkeypress="if(event.key==='Enter'){validarLogin()}">
+        <input type="password" id="pass" placeholder="********">
         </div>
-            <button type="button" onclick="validarLogin()">Entrar</button>
+            <button type="button" onclick="val()">Entrar</button>
         </div>
     </div>
     <script src="/JS/Otros.js"></script>
 
+<<<<<<< HEAD
+=======
+    <script>
+       function val(){
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+
+            if(user == "admin" && pass == "admin"){
+                alert("Bienvenido admin");
+                window.location.href = "Mantenimiento_clasificaciones.html";
+            }else{
+                alert("Usuario o contraseña incorrectos");
+            }
+       }
+
+    </script>
+>>>>>>> 4b39da8b9a3a89e1899352786b789c1a19854913
 </body>
 <!-- Esto se supone que lo mando angelito -->
 </html>

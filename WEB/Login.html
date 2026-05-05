@@ -21,29 +21,30 @@
         <h2>Bienvenido</h2>
     <div class="input-box">
         <label>Usuario</label>
-        <input type="text" placeholder="Tu Nombre">
+        <input type="text" id="user" placeholder="Tu Nombre">
     </div>
     <div class="input-box">
         <label>Contraseña</label>
-        <input type="password" placeholder="********">
+        <input type="password" id="pass" placeholder="********">
         </div>
-            <button type="button" onclick="validarLogin()">Entrar</button>
+            <button type="button" onclick="val()">Entrar</button>
         </div>
     </div>
     <script src="/JS/Otros.js"></script>
 
     <script>
-        function validarLogin(){
-        const usu= document.getElementById("usuario").value;
-        const pass= document.getElementById("contraseña").value;
-        if(usu === "admin" && pass === "admin123"){
-            alert("Bienvenido, admin!");
-            window.location.href = "/Sells/Mantenimiento_clasificaciones.html";
-        }
-        else{
-            alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
-        }
-    };
+       function val(){
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+
+            if(user == "admin" && pass == "admin"){
+                alert("Bienvenido admin");
+                window.location.href = "Mantenimiento_clasificaciones.html";
+            }else{
+                alert("Usuario o contraseña incorrectos");
+            }
+       }
+
     </script>
 </body>
 <!-- Esto se supone que lo mando angelito -->

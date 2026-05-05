@@ -128,3 +128,13 @@ button{
 }
 /* FIN DEL LOGIN ---------------------------- */
 /* ---------------------------------MENU--------------------------------- */
+#body_second{
+    background-color:var(--bg-color);
+    display: flex;
+}
+#body_second .cuerpo{
+    margin-top: 0px;
+    background-color: #e0e0e0;
+    width: 100px;
+    height: 100px;
+}

@@ -1,3 +1,4 @@
+    // LA CONTRASEÑA SERIA admin123 y el Usuario seria Admin, esto es solo para fines de prueba
     let isOn=false;
         const loginForm=document.getElementById("loginForm");
         const lampGroup=document.getElementById("lampGroup");
@@ -17,4 +18,15 @@
             gsap.to(body,{backgroundColor:"#121417",duration:.6});  
         }
     }
+    function validarLogin(){
+        const usu= document.getElementById("usuario").value;
+        const pass= document.getElementById("contraseña").value.trim();
+        if(usu === "admin" && pass === "admin123"){
+            alert("Bienvenido admin!");
+            window.location.href = "Mantenimiento_clasificaciones.html";
+        }
+        else{
+            alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
+        }
+        };
     
